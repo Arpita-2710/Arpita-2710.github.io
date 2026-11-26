@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arpita Majumder – Project Coordinator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF0F7; --surface:#FFFFFF; --ink:#1B2340; --muted:#525B7A; --line:#D5D9E8;
+  --accent:#F2B134; --accent-ink:#1B2340; --teal:#1F7A6D;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121830; --surface:#1B2344; --ink:#EEF0F7; --muted:#A5AED0; --line:#2E3860;
+    --accent:#F2B134; --accent-ink:#1B2340; --teal:#59C4B3; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121830; --surface:#1B2344; --ink:#EEF0F7; --muted:#A5AED0; --line:#2E3860;
+  --accent:#F2B134; --accent-ink:#1B2340; --teal:#59C4B3; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.15rem;line-height:1.6}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+nav{display:flex;gap:1.4rem;flex-wrap:wrap;padding:1.4rem 0;font-family:var(--display);font-weight:500;font-size:1rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:3rem 0 4rem}
+.hero h1{font-size:clamp(3rem,10vw,6.5rem);font-weight:700;letter-spacing:-.03em;max-width:10ch}
+.hero h1 span{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:0 .15em;border-radius:.12em;transform:rotate(-1.5deg);animation:pop .6s .15s both cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:rotate(6deg) scale(.85);opacity:0}to{transform:rotate(-1.5deg) scale(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){.hero h1 span{animation:none}html{scroll-behavior:auto}}
+.hero p{max-width:34em;font-size:1.3rem;color:var(--muted);margin:1.6rem 0 2rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;font-family:var(--display);font-weight:500}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:999px;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+section{padding:3rem 0;border-top:2px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.6rem}
+.card{background:var(--surface);border:2px solid var(--line);border-left:8px solid var(--teal);border-radius:10px;padding:1.5rem 1.6rem;margin-bottom:1.4rem}
+.card.work{border-left-color:var(--accent)}
+.card h3{font-size:1.45rem}
+.meta{color:var(--muted);font-size:1rem;margin:.3rem 0 1rem}
+.card ul{margin:0;padding-left:1.2rem}
+.card li{margin-bottom:.5rem;max-width:62ch}
+.tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem;padding:0;list-style:none}
+.tags li{font-family:var(--display);font-size:.9rem;font-weight:500;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.2rem .8rem;margin:0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
+.skills h3{font-size:1.2rem;margin-bottom:.6rem}
+.skills p{margin:0;color:var(--muted)}
+.edu{display:grid;gap:.9rem}
+.edu div{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-bottom:1px dashed var(--line);padding-bottom:.8rem}
+.edu b{font-family:var(--display);font-weight:700}
+.edu span{color:var(--muted)}
+footer{padding:3rem 0 4rem;border-top:2px solid var(--line)}
+footer h2{margin-bottom:.8rem}
+footer p{margin:.3rem 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Sections">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Arpita <span>Majumder</span></h1>
+    <p>Final-year B.Tech Computer Science student who builds frontends and keeps teams on track. I’m looking for a Project Coordinator role, where I can connect technical teams, account managers and clients.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:arpitamajumder2710@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/arpita-majumder-123a51292" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Arpita-2710" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <article class="card work">
+      <h3>IT Intern, Airports Authority of India</h3>
+      <p class="meta">NSCBI Airport, IT Department · 10 June 2026 – 9 August 2026</p>
+      <ul>
+        <li>Built the frontend of an IoT-based smart washroom monitoring system for airport administrators and terminal operations, using Next.js.</li>
+        <li>Made dashboard screens showing real-time air quality, temperature, humidity and occupancy, with different views for different user roles.</li>
+        <li>Worked with backend developers so live data, alerts and incident updates showed correctly on screen.</li>
+        <li>Learned to work in a professional IT team and build to real users’ requirements.</li>
+      </ul>
+      <ul class="tags"><li>Next.js</li><li>Dashboards</li><li>Team collaboration</li></ul>
+    </article>
+  </section>
+
+  <section id="projects">
+    <h2>Academic projects</h2>
+    <article class="card">
+      <h3>MedChain: blockchain healthcare management</h3>
+      <p class="meta">Team of 4 · 3 months</p>
+      <ul>
+        <li>Designed and built the frontend of a platform that stores patient medical records securely using blockchain, with separate dashboards for patients and doctors.</li>
+        <li>Tested login, report upload and doctor access control, and flagged issues to teammates so they could be fixed.</li>
+        <li>Worked with clearly divided responsibilities across design, testing and development.</li>
+      </ul>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+    </article>
+    <article class="card">
+      <h3>VeiL: anonymous messaging app</h3>
+      <p class="meta">Team of 3 · 1 month</p>
+      <ul>
+        <li>Designed the interface of an anonymous messaging web app, with a simple conversation screen and private user profiles.</li>
+        <li>Completed the project with a team of three within one month.</li>
+      </ul>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Coordination and communication</h3><p>Written and spoken English, team collaboration, task planning, documentation, status reporting, problem solving.</p></div>
+      <div><h3>Technical understanding</h3><p>HTML, CSS, JavaScript, Next.js, UI design, manual testing, basic SQL and Python, C, C++, Java.</p></div>
+      <div><h3>Tools</h3><p>MS Excel, GitHub.</p></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu">
+      <div><b>Adamas University</b><span>B.Tech in Computer Science and Engineering, 2023 – 2027</span></div>
+      <div><b>Hem Sheela Model School</b><span>Higher Secondary (Class XII), 2023</span></div>
+      <div><b>Carmel Convent High School</b><span>Secondary (Class X), 2021</span></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Let’s work together</h2>
+    <p><a href="mailto:arpitamajumder2710@gmail.com">arpitamajumder2710@gmail.com</a></p>
+    <p><a href="tel:+919339724469">+91 93397 24469</a></p>
+  </footer>
+</div>
+</body>
+</html>
